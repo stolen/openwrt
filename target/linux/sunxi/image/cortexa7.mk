@@ -231,3 +231,11 @@ define Device/xunlong_orangepi-2
   SOC := sun8i-h3
 endef
 TARGET_DEVICES += xunlong_orangepi-2
+
+define Device/sjcam_sj4000-air
+  DEVICE_VENDOR := SJCAM
+  DEVICE_MODEL := SJ4000 Air
+  DEVICE_PACKAGES:=kmod-rtc-sunxi
+  SOC := sun8i-v3
+endef
+TARGET_DEVICES += sjcam_sj4000-air

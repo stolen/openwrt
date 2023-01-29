@@ -334,6 +334,12 @@ define U-Boot/bananapi_m2_berry
   BUILD_DEVICES:=sinovoip_bananapi-m2-berry
 endef
 
+define U-Boot/sjcam_sj4000-air
+  BUILD_SUBTARGET:=cortexa7
+  NAME:=SJCAM SJ4000 Air
+  BUILD_DEVICES:=sjcam_sj4000-air
+endef
+
 UBOOT_TARGETS := \
 	a64-olinuxino \
 	a64-olinuxino-emmc \
@@ -380,6 +386,7 @@ UBOOT_TARGETS := \
 	pine64_plus \
 	sopine_baseboard \
 	orangepi_zero_plus \
+	sjcam_sj4000-air \
 	libretech_all_h3_cc_h5
 
 UBOOT_CONFIGURE_VARS += USE_PRIVATE_LIBGCC=yes
